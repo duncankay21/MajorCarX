@@ -1,6 +1,6 @@
-# MajorCarX Website
+ MajorCarX Website
 
-## Student Information
+ Student Information
 - Student Name: Karabo Molopi
 - Student ID: ST10515223
 - Module: Web Development (WEDE 5020)
@@ -8,12 +8,12 @@
 
 ---
 
-## Project Overview
+ Project Overview
 MajorCarX is a specialized automotive website designed to showcase custom performance builds, high-spec motor repairs, ECU tuning, and body styling services. The project is built using HTML to deliver a functional user interface tailored for automotive enthusiasts.
 
 ---
 
-## Website Goals and Objectives
+ Website Goals and Objectives
 - Establish an online presence for MajorCarX.
 - Provide clear information on available workshop and tuning services.
 - Display visual media showcasing recent vehicle projects and builds.
@@ -21,7 +21,7 @@ MajorCarX is a specialized automotive website designed to showcase custom perfor
 
 ---
 
-## Key Features and Functionality
+ Key Features and Functionality
 - Navigation Bar: Global navigation links present across all pages for smooth user experience.
 - Service Listings: Detailed descriptions of mechanical and performance tuning offerings.
 - Visual Gallery: Uniform showcase of high-performance vehicles and engine bays.
@@ -29,7 +29,7 @@ MajorCarX is a specialized automotive website designed to showcase custom perfor
 
 ---
 
-## Timeline and Milestones
+Timeline and Milestones
 - Milestone 1: Wireframing and content structure planning.
 - Milestone 2: HTML layout development (home.html, about.html, services.html, gallery.html, contact.html).
 - Milestone 3: Adding image media and page styling.
@@ -37,12 +37,11 @@ MajorCarX is a specialized automotive website designed to showcase custom perfor
 
 ---
 
-## Part 1 Details
+ Part 1 Details
 Part 1 focuses on building the core static HTML architecture, file organization, and establishing version control via Git and GitHub. (Part 2 and Part 3 will follow in future submissions/edits).
 
 ---
-
-## Sitemap
+ Sitemap
 ```text
 MajorCarX/
 ├── home.html
@@ -52,7 +51,7 @@ MajorCarX/
 ├── contact.html
 └── images/
 
-## References
+ References
 - body-styling.jpg: iStock / Getty Images. (2026). Car Detailing and Auto Polishing. Available at: https://www.istockphoto.com (Accessed: 14 August 2026).
 - boy.jpg: AI-generated automotive engine bay twin turbo rendering / digital asset.
 - duncan.jpg: MANHART Performance. (2026). MANHART MH2 560 (BMW M2 G87). Available at: https://manhart-automotive.de (Accessed: 14 August 2026).
