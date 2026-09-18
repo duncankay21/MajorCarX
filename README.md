@@ -40,6 +40,20 @@ Timeline and Milestones
  Part 1 Details
 Part 1 focuses on building the core static HTML architecture, file organization, and establishing version control via Git and GitHub. (Part 2 and Part 3 will follow in future submissions/edits).
 
+
+
+MOBILE DEVICE
+![alt text](<images/Screenshot 2026-09-18 093435.png>)
+
+TABLET
+![alt text](<images/Screenshot 2026-09-18 093456.png>)
+
+LAPTOP
+![alt text](<images/Screenshot 2026-09-18 093516.png>)
+
+
+
+
 ---
  Sitemap
 ```text
