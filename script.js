@@ -25,3 +25,42 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.querySelector("form");
+    
+    if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault(); // Stop form from submitting instantly to allow validation
+            
+            const nameInput = document.querySelector("#name, input[name='name']");
+            const emailInput = document.querySelector("#email, input[name='email']");
+            const messageInput = document.querySelector("textarea");
+            
+            let isValid = true;
+            let errorMessage = "";
+
+            if (nameInput && nameInput.value.trim() === "") {
+                isValid = false;
+                errorMessage += "Please enter your name.\n";
+            }
+
+            if (emailInput && (emailInput.value.trim() === "" || !emailInput.value.includes("@"))) {
+                isValid = false;
+                errorMessage += "Please enter a valid email address.\n";
+            }
+
+            if (messageInput && messageInput.value.trim() === "") {
+                isValid = false;
+                errorMessage += "Please enter a message or enquiry details.\n";
+            }
+
+            if (!isValid) {
+                alert(errorMessage);
+            } else {
+                alert("Thank you! Your enquiry has been successfully validated and sent.");
+                contactForm.reset();
+            }
+        });
+    }
+});
