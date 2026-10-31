@@ -75,3 +75,14 @@ MajorCarX/
 - MajorCarX.png: MajorCarX Brand Logo (Student Original Artwork, 2026).
 - molopi.jpg: Pexels / Unsplash. (2026). Modified Classic JDM Coupe on Yellow Background. Available at: https://pexels.com (Accessed: 14 August 2026).
 - track-prep.jpg: Unsplash. (2026). Nissan Skyline GT-R R32 Open Hood Track Preparation. Available at: https://unsplash.com (Accessed: 14 August 2026).
+
+PART 3
+Changelog
+- Initial project setup and file structure creation
+- Added about.html, services.html, gallery.html, and contact.html
+- Fixed page navigation links and file naming issues
+- Added uniform image sizing and scaling to gallery.html
+- Created comprehensive README.md documentation and image references
+- Implemented JavaScript interactive elements and image lightbox functionality
+- Added client-side JavaScript form validation for contact and enquiry forms
+- Added SEO optimization files (robots.txt and sitemap.xml)
