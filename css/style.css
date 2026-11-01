@@ -242,3 +242,29 @@ label {
   color: #cccccc;
   margin-bottom: 5px;
 }
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .card-grid, .gallery-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-section form, .location-section {
+        width: 100%;
+        padding: 15px;
+    }
+}

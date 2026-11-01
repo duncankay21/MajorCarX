@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
-    // 1. LIGHTBOX (Gallery & Service Page Images)
+   
     const popUpImages = document.querySelectorAll(".gallery-grid img, .gallery-img, .card-grid img");
     
     if (popUpImages.length > 0) {
@@ -26,45 +25,44 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. FORM VALIDATION (Contact & Enquiry Pages)
-    const contactForm = document.querySelector("form");
-    
-    if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
+    const activeForm = document.querySelector("form");
+
+    if (activeForm) {
+        activeForm.addEventListener("submit", (e) => {
             e.preventDefault();
-            
-            const nameInput = document.querySelector("#name, input[name='name']");
-            const emailInput = document.querySelector("#email, input[name='email']");
-            const messageInput = document.querySelector("textarea");
-            
-            let isValid = true;
-            let errorMessage = "";
 
-            if (nameInput && nameInput.value.trim() === "") {
-                isValid = false;
-                errorMessage += "Please enter your name.\n";
+            const name = document.querySelector("#name, input[name='name']");
+            const email = document.querySelector("#email, input[name='email']");
+            const phone = document.querySelector("#phone, input[name='phone']");
+            const message = document.querySelector("textarea");
+
+            let errors = [];
+
+            if (name && name.value.trim() === "") {
+                errors.push("Full Name is required.");
             }
 
-            if (emailInput && (emailInput.value.trim() === "" || !emailInput.value.includes("@"))) {
-                isValid = false;
-                errorMessage += "Please enter a valid email address.\n";
+            if (email && (email.value.trim() === "" || !email.value.includes("@") || !email.value.includes("."))) {
+                errors.push("A valid Email Address is required.");
             }
 
-            if (messageInput && messageInput.value.trim() === "") {
-                isValid = false;
-                errorMessage += "Please enter a message or enquiry details.\n";
+            if (phone && phone.value.trim().length < 7) {
+                errors.push("Please enter a valid phone number (at least 7 digits).");
             }
 
-            if (!isValid) {
-                alert(errorMessage);
+            if (message && message.value.trim() === "") {
+                errors.push("Message/Enquiry details cannot be left blank.");
+            }
+
+            if (errors.length > 0) {
+                alert("Validation Errors:\n\n" + errors.join("\n"));
             } else {
-                alert("Thank you! Your submission has been successfully validated and sent.");
-                contactForm.reset();
+                alert("Success! Your enquiry has been validated and sent.");
+                activeForm.reset();
             }
         });
     }
 
-    // 3. DYNAMIC SEARCH FILTER (Service Page)
     const searchInput = document.getElementById("serviceSearch");
     
     if (searchInput) {
