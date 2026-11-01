@@ -109,3 +109,15 @@ CSS flexbox, grid layouts, and custom media queries ensure the full site dynamic
 
 5. SEO Optimization
 Search engine optimization is integrated using standard page titles, alternative text attributes on image elements, a robots.txt file, and a complete sitemap.xml file configured for the repository path.
+
+Reference list
+
+1. Google Maps. 2026. PowerPipes AutoArt Midrand Location Map Embed. Available at: <https://www.google.com/maps> [Accessed 1 November 2026].
+
+2. MDN Web Docs. 2026. Responsive design and media queries. Mozilla Developer Network. Available at: <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design> [Accessed 1 November 2026].
+
+3. MDN Web Docs. 2026. Client-side form validation. Mozilla Developer Network. Available at: <https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation> [Accessed 1 November 2026].
+
+4. Sitemaps.org. 2026. Standard XML Sitemap Protocol schema. Available at: <https://www.sitemaps.org/protocol.html> [Accessed 1 November 2026].
+
+5. W3C. 2026. HTML5 and CSS3 Specifications. World Wide Web Consortium. Available at: <https://www.w3.org/> [Accessed 1 November 2026].
