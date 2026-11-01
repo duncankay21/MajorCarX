@@ -242,29 +242,78 @@ label {
   color: #cccccc;
   margin-bottom: 5px;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 15px;
-        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 10px;
+        width: 100%;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
     nav {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap: 8px 12px;
+        width: 100%;
     }
 
-    .hero h1 {
-        font-size: 2.2rem;
+    nav a {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+
+    .hero {
+        padding: 30px 15px !important;
+        min-height: auto !important;
+    }
+
+    .hero h1, .welcome-title, h1 {
+        font-size: 1.8rem !important;
+        word-wrap: break-word;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: 1.6rem !important;
     }
 
     .card-grid, .gallery-grid {
         grid-template-columns: 1fr !important;
+        gap: 15px;
     }
 
-    .contact-section form, .location-section {
+    .contact-section, .location-section, form {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .button-group {
+        flex-direction: column;
         width: 100%;
-        padding: 15px;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
     }
 }
